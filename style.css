@@ -82,6 +82,12 @@ img {
     text-transform: uppercase;
 }
 
+input:focus{
+    outline: none;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    border: 2px solid var(--hover);
+}
+
 .session{
     padding: 5vmin;
 }
