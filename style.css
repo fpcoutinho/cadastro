@@ -79,8 +79,11 @@ img {
     flex-flow: column wrap;
     width: 40%;
     font-size: 0.9rem;
-    text-transform: uppercase;
     gap:5px;
+}
+
+.input label{
+    text-transform: uppercase;
 }
 
 input{
@@ -93,6 +96,11 @@ input:focus {
     outline: none;
     box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
     border: 2px solid var(--hover);
+}
+
+.help {
+    color: red;
+    text-align: start;
 }
 
 .session {
@@ -125,4 +133,12 @@ button:hover {
 
 a:hover {
     color: var(--hover);
+}
+
+#telefone:invalid{
+    color:red;
+}
+
+#telefone:invalid:focus {
+    border-color: red;
 }
