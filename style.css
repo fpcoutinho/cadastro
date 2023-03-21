@@ -98,9 +98,18 @@ input:focus {
     border: 2px solid var(--hover);
 }
 
-.help {
+.help{
+    display: none;
+}
+
+.invalid .help {
+    display: block;
     color: red;
     text-align: start;
+}
+
+.invalid #senha, .invalid #confirmar-senha{
+    border-color: red;
 }
 
 .session {
