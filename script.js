@@ -12,3 +12,20 @@ function phoneMask() {
     element.value = inputValue;
 }
 document.querySelector('[type="tel"]').addEventListener('keyup', phoneMask);
+
+
+function validatePassword() {
+    var password = document.getElementById("senha");
+    var confirmPassword = document.getElementById("confirmar-senha");
+    if (password.value != confirmPassword.value) {
+        password.setCustomValidity('Senhas não conferem.');
+        password.parentElement.classList.add('invalid');
+        confirmPassword.parentElement.classList.add('invalid');
+    } else {
+        password.setCustomValidity('');
+        password.parentElement.classList.remove('invalid');
+        confirmPassword.parentElement.classList.remove('invalid');
+    }
+}
+document.getElementById("senha").addEventListener('keyup', validatePassword);
+document.getElementById("confirmar-senha").addEventListener('keyup', validatePassword);
