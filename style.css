@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-:root{
-    --primary: #292929;
-    --secondary: #1b1b1b;
+:root {
+    --primary: #1F2937;
+    --secondary: #111827;
     --font-highlight: salmon;
-    --font-primary: #fff;
+    --font-primary: rgb(243, 243, 225);
     --hover: darksalmon;
 }
 
-body{
+body {
     margin: 0;
     color: var(--font-primary);
 }
 
-main{
+main {
     display: flex;
 }
 
-.left-banner{
+.left-banner {
     width: 65vmin;
     height: 100vh;
     background-image: url(resources/flufflepuff_and_naveen_by_fleetingember_ddf1mcw-fullview.jpg);
@@ -35,7 +35,7 @@ img {
 
 }
 
-.left-banner h1{
+.left-banner h1 {
     font-size: 5vmin;
     color: linen;
     position: absolute;
@@ -51,7 +51,7 @@ img {
 
 }
 
-.right-banner{
+.right-banner {
     font-family: Quicksand;
     height: 100vh;
     display: flex;
@@ -61,10 +61,10 @@ img {
     font-size: 18px;
 }
 
-.formulario{
+.formulario {
     background-color: var(--secondary);
     width: 100%;
-    flex:3;
+    flex: 3;
     padding: 5vmin;
     box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
     display: flex;
@@ -80,29 +80,36 @@ img {
     width: 40%;
     font-size: 0.9rem;
     text-transform: uppercase;
+    gap:5px;
 }
 
-input:focus{
+input{
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+}
+
+input:focus {
     outline: none;
     box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
     border: 2px solid var(--hover);
 }
 
-.session{
+.session {
     padding: 5vmin;
 }
 
-.right-banner h2{
+.right-banner h2 {
     font-size: 32px;
     color: var(--font-highlight);
 }
 
-a{
+a {
     color: var(--font-highlight);
     text-decoration: none;
 }
 
-button{
+button {
     background-color: var(--font-highlight);
     color: var(--font-primary);
     border-radius: 10px;
@@ -112,10 +119,10 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: var(--hover);
 }
 
-a:hover{
+a:hover {
     color: var(--hover);
 }
